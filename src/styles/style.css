@@ -241,11 +241,7 @@ body {
 }
 
 
-@media only screen and (max-width: 780px) {
-    .card {
-        min-width: 300px; /* Calcula o tamanho de cada card para caberem 2 por linha */
-    }
-}
+
 
 #container {
     display: flex;
@@ -253,4 +249,26 @@ body {
     flex-wrap: wrap;
     width: auto;
     gap: 10px;
+}
+
+
+@media only screen and (max-width: 780px) {
+    .card {
+        min-width: 326px;
+        /* Calcula o tamanho de cada card para caberem 2 por linha */
+    }
+
+    .secoes {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .footer {
+        display: block;
+        width: auto;
+    }
 }
